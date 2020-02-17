@@ -31,14 +31,17 @@ font-family: 'Cinzel', serif;
 font-family: 'Montserrat', sans-serif; */
 
 .container {
-    display: flex;
-    justify-content: center;
     width: 100%;
 }
 
 /* logo  */
 
-#logo .logo {
+#logo>.container {
+    display: flex;
+    justify-content: center;
+}
+
+#logo>.container>.logo {
     cursor: pointer;
     padding: 20px;
     margin-top: 10px;
@@ -48,17 +51,21 @@ font-family: 'Montserrat', sans-serif; */
 
 #menu {
     position: sticky;
+    z-index: 3;
     top: 0;
     background: white;
-    padding: 10px;
 }
 
-#menu ul {
+#menu>.container {
+    padding: 10px 0px;
+}
+
+#menu>.container>ul {
     display: flex;
     justify-content: center;
 }
 
-#menu ul>li>a {
+#menu>.container>ul>li>a {
     font-family: 'Cinzel', serif;
     text-transform: uppercase;
     font-size: .8rem;
@@ -71,7 +78,16 @@ font-family: 'Montserrat', sans-serif; */
 
 /* slider  */
 
-#slider .imgbox {
+#slider {
+    padding-bottom: 40px;
+}
+
+#slider>.container {
+    display: flex;
+    justify-content: center;
+}
+
+#slider>.container>.imgbox {
     position: relative;
     width: 1140px;
 }
@@ -90,29 +106,33 @@ hr {
     opacity: 0.3;
 }
 
-#slider h1, h2 {
+#slider>.container>.imgbox>h2 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 5rem;
+    font-size: 4.2vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-#slider h1 {
+#slider>.container>.imgbox>h1 {
+    position: absolute;
     top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.6vw;
     font-family: 'Cinzel', serif;
-    font-size: 1.5rem;
     font-weight: 300;
+    text-transform: uppercase;
 }
 
-#slider .container{
+#slider .container {
     position: relative;
 }
 
-#slider .container::before{
+#slider .container::before {
     cursor: pointer;
     content: "\f060";
     color: gray;
@@ -123,9 +143,9 @@ hr {
     left: 15px;
     transform: translate(-50%, -50%);
     font-size: 20px;
-
 }
-#slider .container::after{
+
+#slider .container::after {
     cursor: pointer;
     content: "\f061";
     color: gray;
@@ -136,5 +156,129 @@ hr {
     right: 15px;
     transform: translate(-50%, -50%);
     font-size: 20px;
+}
 
+/* Products */
+
+#products {
+    margin: 120px 0px;
+}
+
+#products>.container {
+    text-align: center;
+}
+
+#products>.container>h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Cinzel', serif;
+    line-height: 1.2;
+    color: #000;
+}
+
+#products>.container>h2 {
+    margin-bottom: 15px;
+    color: #000;
+    line-height: 1.7;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#products>.container>a {
+    color: #930077;
+    line-height: 1.7;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#products>.container>.product>ul {
+    max-width: 1140px;
+}
+
+#products>.container>.product>ul>li {
+    position: relative;
+    margin: 0px 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    width: 31%;
+}
+
+#products>.container>.product>ul>li:hover .hoverbox {
+    opacity: 1;
+}
+
+#products>.container>.product>ul>li::before {
+    content: "";
+    background: #f3f4f5;
+    top: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+#products h4 {
+    padding-top: 20px;
+    color: #000;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+#products h5 {
+    padding-top: 5px;
+    line-height: 1.7;
+    color: gray;
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.product {
+    margin-top: 120px;
+}
+
+.hoverbox {
+    padding: 20px 0px 30px 0px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #fff;
+    opacity: 0;
+    transition: .4s;
+}
+
+.hoverbox>ul {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.fa-star {
+    font-size: 16px;
+    color: #ffbd39;
+    padding: 10px 0px;
+}
+
+a>.btn {
+    transition: .4s;
+    font-family: 'Roboto', sans-serif;
+    background: #930077;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+a>.btn:hover {
+    background: #60004e;
+}
+
+.fa-shopping-bag {
+    padding-right: 10px;
 }
