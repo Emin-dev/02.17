@@ -51,7 +51,7 @@ font-family: 'Montserrat', sans-serif; */
 
 #menu {
     position: sticky;
-    z-index: 3;
+    z-index: 5;
     top: 0;
     background: white;
 }
@@ -96,7 +96,7 @@ hr {
     opacity: 0.3;
 }
 
-.overlay {
+.imgbox>.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -194,6 +194,10 @@ hr {
     font-family: 'Roboto', sans-serif;
 }
 
+#products>.container>a>i {
+    color: #930077;
+}
+
 #products>.container>.product>ul {
     max-width: 1140px;
 }
@@ -281,4 +285,175 @@ a>.btn:hover {
 
 .fa-shopping-bag {
     padding-right: 10px;
+}
+
+/* everyone  */
+
+#everyone {
+    text-align: center;
+}
+
+#everyone>.container {
+    padding: 130px 0px;
+    background: url(/imgs/bg2.jpg);
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#everyone>.container>.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    opacity: 0.3;
+}
+
+#everyone>.container>h1 {
+    position: relative;
+    font-size: 1.6vw;
+    font-family: 'Cinzel', serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#everyone>.container>h2 {
+    position: relative;
+    padding: 0% 25%;
+    font-size: 4.2vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* theysay  */
+
+#theysay {
+    background-color: #f8f9fa;
+    padding: 120px 0px;
+    text-align: center;
+}
+
+#theysay>.container>ul {
+    max-width: 1400px;
+}
+
+#theysay>.container>ul>li {
+    box-sizing: border-box;
+    padding: 0px 20px;
+    width: 30%;
+    text-align: center;
+}
+
+#theysay>.container>ul>li>img {
+    width: 80px;
+    border-radius: 100%;
+    border: 4px solid #930077;
+}
+
+#theysay>.container>ul>li>p {
+    padding: 20px 0px;
+    font-size: 20px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    line-height: 1.7;
+    color: gray;
+    font-weight: 300;
+}
+
+#theysay>.container>ul>li>h4 {
+    font-size: 18px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    line-height: 1.7;
+    color: #930077;
+    font-weight: 500;
+}
+
+/* WinesBlog  */
+
+#WinesBlog {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+#WinesBlog>.container>ul {
+    margin-top: 100px;
+    max-width: 1400px;
+}
+
+#WinesBlog>.container>ul>li {
+    text-align: left;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    width: 30%;
+}
+
+#WinesBlog>.container>h1 {
+    padding-bottom: 10px;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Cinzel', serif;
+}
+
+#WinesBlog>.container>h2 {
+    padding-bottom: 10px;
+    line-height: 1.7;
+    color: #000;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#WinesBlog>.container>a{
+    display: block;
+    padding-bottom: 10px;
+    line-height: 1.7;
+    color: #930077;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+#WinesBlog>.container>a>i {
+    color: #930077;
+}
+
+#WinesBlog>.container>ul>li>h1 {
+    cursor: pointer;
+    padding-bottom: 10px;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+}
+
+#WinesBlog>.container>ul>li>h2 {
+    padding-bottom: 10px;
+    line-height: 1.7;
+    color: #808080;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#WinesBlog>.container>ul>li>p {
+    line-height: 1.7;
+    color: gray;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-size: .8rem;
+}
+
+#WinesBlog>.container>ul>li>p>span {
+    cursor: pointer;
+    font-size: .8rem;
+    color: #000;
+    line-height: 1.7;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
 }
