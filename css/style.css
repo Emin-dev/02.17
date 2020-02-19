@@ -161,7 +161,7 @@ hr {
 /* Products */
 
 #products {
-    margin: 120px 0px;
+    padding: 100px 0px;
 }
 
 #products>.container {
