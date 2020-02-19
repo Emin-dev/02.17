@@ -410,7 +410,7 @@ a>.btn:hover {
     font-family: 'Roboto', sans-serif;
 }
 
-#WinesBlog>.container>a{
+#WinesBlog>.container>a {
     display: block;
     padding-bottom: 10px;
     line-height: 1.7;
@@ -419,6 +419,7 @@ a>.btn:hover {
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
 }
+
 #WinesBlog>.container>a>i {
     color: #930077;
 }
@@ -456,4 +457,53 @@ a>.btn:hover {
     line-height: 1.7;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
+}
+
+/* footer  */
+
+#footer {
+    padding: 130px 0px;
+    text-align: center;
+}
+
+#footer>.container>ul>li {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #930077;
+    color: #fff;
+}
+
+#footer>.container>ul>li>i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+#footer>.container>p {
+    line-height: 1.7;
+    color: gray;
+    font-weight: 300;
+    font-size: .85rem;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+}
+
+#footer>.container>p>a {
+    line-height: 1.7;
+    font-weight: 400;
+    font-size: .85rem;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+    color: #930077;
+}
+#footer>.container>p>i{
+    color: #f23a2e;
+    padding-right: 5px;
 }
