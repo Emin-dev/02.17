@@ -537,8 +537,6 @@ a>.btn:hover {
     color: black;
 }
 
-
-
 #ContactUs>.container>textarea {
     width: 98%;
     font-size: 1.25rem;
@@ -585,8 +583,7 @@ a>.btn:hover {
     border-color: #ff14d2;
 }
 
-
-.ibtn{
+.ibtn {
     border: none;
     margin-top: 20px;
     display: block;
@@ -598,4 +595,76 @@ a>.btn:hover {
     line-height: 1.5;
     border-radius: 5px;
     padding: 15px 42px;
+}
+
+/*for  About.html  */
+
+/* About  */
+
+#HowWeStarted {
+    padding: 50px;
+}
+
+#HowWeStarted>.container {
+    width: 1140px;
+    margin: auto;
+}
+
+#HowWeStarted>.container>ul {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#HowWeStarted>.container>ul>li {
+    align-items: flex-start;
+    width: 44%;
+    margin: 30px;
+}
+
+#HowWeStarted>.container>ul>li>h1 {
+    padding: 20px 0px;
+    margin-bottom: 20px;
+    font-family: 'Cinzel', serif;
+    color: black;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+#HowWeStarted>.container>ul>li>h2 {
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    line-height: 1.7;
+    color: gray;
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#HowWeStarted>.container>ul>li>h6 {
+    color: #25262a;
+    letter-spacing: .05em;
+    font-size: 18px;
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+#HowWeStarted>.container>ul>li>h5 {
+    line-height: 1.7;
+    color: gray;
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#HowWeStarted>.container>ul>li>i {
+    font-size: 40px;
+    display: inline-block;
+    color: #930077;
+    position: relative;
+    left: -65px;
+    top: 43px;
 }
