@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+input, textarea {
+    outline: none;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -503,7 +507,95 @@ a>.btn:hover {
     padding-top: 50px;
     color: #930077;
 }
-#footer>.container>p>i{
+
+#footer>.container>p>i {
     color: #f23a2e;
     padding-right: 5px;
+}
+
+/*for  contact.html  */
+
+/* ContactUs  */
+
+#ContactUs {
+    background: #f8f9fa;
+    padding: 120px 0px;
+    text-align: center;
+}
+
+#ContactUs>.container {
+    max-width: 1140px;
+    margin: auto;
+    text-align: left;
+}
+
+#ContactUs>.container>h1 {
+    margin-bottom: 50px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Cinzel', serif;
+    color: black;
+}
+
+
+
+#ContactUs>.container>textarea {
+    width: 98%;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    color: #495057;
+    border: 1px solid #ccc;
+}
+
+.inputs4 {
+    margin: 20px 0px;
+}
+
+.inputs4>h5 {
+    font-family: 'Roboto', sans-serif;
+    width: 48%;
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 1.7;
+    color: gray;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-right: 20px;
+}
+
+.inputs4>input {
+    margin: 10px 20px 10px 0px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 48%;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 5px;
+    color: #495057;
+    border: 1px solid #ccc;
+}
+
+.inputs4>input:focus {
+    border-color: #ff14d2;
+}
+
+#ContactUs>.container>textarea:focus {
+    border-color: #ff14d2;
+}
+
+
+.ibtn{
+    border: none;
+    margin-top: 20px;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    background-color: #930077;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 5px;
+    padding: 15px 42px;
 }
